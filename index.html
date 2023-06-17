@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
+
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+  <body class="body--salmon">
+    <div id="home-page">
+      <div class="container">
+        <main class="design-card">
+          <section class="design-card__img design-card__img--salmon"></section>
+          <section class="design-card__info">
+            <h3 class="design-card__sub-heading">WALLETS</h3>
+            <h2 class="design-card__heading">Leather wallet with logo</h2>
+            <p class="design-card__description">
+              Gucci pink wallet. Made of leather with a grainy texture. Closed
+              with a latch. Decorated with a logo-shaped applique on the front.
+              Inside, there is a bill compartment, a zipped coin pocket, two
+              slip pockets and four card slots.
+            </p>
+            <form class="design-card__form">
+              <h4 class="design-card__color-heading">Color</h4>
+
+              <input
+                type="radio"
+                name="color-buttons"
+                value="salmon"
+                class="design-card__color-button design-card__color-button--salmon"
+                checked="checked"
+              />
+              <input
+                type="radio"
+                name="color-buttons"
+                value="pink"
+                class="design-card__color-button design-card__color-button--pink"
+              />
+              <input
+                type="radio"
+                name="color-buttons"
+                value="yellow"
+                class="design-card__color-button design-card__color-button--yellow"
+              />
+              <input
+                type="radio"
+                name="color-buttons"
+                value="grey"
+                class="design-card__color-button design-card__color-button--grey"
+              />
+              <p class="design-card__price">
+                <span class="design-card__current-price">1 449,00 </span>
+                <span class="design-card__old-price">1 749,00 </span>
+              </p>
+              <button class="design-card__btn">Add to cart</button>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script
+      type="module"
+      src="/src/pages/home-page/scripts/home-page.js"
+    ></script>
+  </body>
+</html>

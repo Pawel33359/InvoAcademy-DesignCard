@@ -1,0 +1,185 @@
+.design-card {
+  background-color: var(--color-background);
+  margin: 0 auto;
+  border-radius: var(--border-radius-small);
+  max-width: 677px;
+  min-height: 451px;
+  display: grid;
+  // grid-template-columns: 1fr 397px;
+  grid-template-columns: 12fr 17fr;
+  overflow: hidden;
+
+  & &__img {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 100% auto;
+
+    &--salmon {
+      background-image: url("../../../../assets//images/desktop/Purse1.png");
+      background-color: #f7f7f7;
+    }
+    &--pink {
+      background-image: url("../../../../assets//images/desktop/Purse2.png");
+      background-color: #fff1f7;
+    }
+    &--yellow {
+      background-image: url("../../../../assets//images/desktop/Purse3.png");
+      background-color: #fff6e5;
+    }
+    &--grey {
+      background-image: url("../../../../assets//images/desktop/Purse4.png");
+      background-color: #f7f7f7;
+    }
+  }
+
+  & &__info {
+    padding: 42.2px 32px 40.5px 32px;
+  }
+  & &__sub-heading {
+    font-family: "Montserrat";
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-small);
+    color: var(--color-primary);
+
+    margin-bottom: 7px;
+    line-height: 140%;
+    letter-spacing: -0.003em;
+  }
+  & &__heading {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-extra-large);
+
+    margin-bottom: 12.3px;
+    width: 75%;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+  }
+  & &__description {
+    font-family: "Montserrat";
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-small);
+
+    margin-bottom: 16px;
+    width: 95%;
+    line-height: 144%;
+    letter-spacing: -0.008em;
+  }
+
+  & &__color-heading {
+    font-family: "Montserrat";
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-small);
+    margin-bottom: 8px;
+
+    line-height: 140%;
+  }
+
+  & &__color-button {
+    appearance: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    &--salmon {
+      background-color: var(--color-salmon);
+    }
+    &--pink {
+      background-color: var(--color-pink);
+    }
+    &--yellow {
+      background-color: var(--color-yellow);
+    }
+    &--grey {
+      background-color: var(--color-grey);
+    }
+    &:checked {
+      border: 1px solid #000000;
+    }
+  }
+
+  & &__price {
+    font-size: var(--font-size-large);
+    color: var(--color-dark-text);
+    margin-top: 20.4px;
+    margin-bottom: 10px;
+    margin-left: -1px;
+
+    line-height: 110%;
+    letter-spacing: -0.03em;
+  }
+  & &__current-price {
+    &::after {
+      content: "USD";
+      font-size: var(--font-size-medium);
+      margin-left: 2px;
+      margin-right: 2.6px;
+    }
+  }
+  & &__old-price {
+    font-size: var(--font-size-medium);
+    color: var(--color-light-text);
+    text-decoration: line-through;
+    letter-spacing: -0.03em;
+    &::after {
+      content: "USD";
+      display: inline-block;
+      font-size: 10px;
+      letter-spacing: 0.003em;
+      text-decoration: line-through;
+    }
+  }
+  & &__btn {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    font-family: "Montserrat";
+    font-size: var(--font-size-medium);
+    padding: 1rem 0;
+    border-radius: 12px;
+    letter-spacing: -0.006em;
+    &:hover {
+      background-color: #ffc4ad;
+    }
+    &:active {
+      background-color: #f1ad94;
+    }
+  }
+  @media (max-width: 834px) {
+    & &__info {
+      padding: 40px 32px 40.5px 31px;
+    }
+  }
+  // Mobile Size
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    & &__img {
+      height: 246px;
+      &--salmon {
+        background-image: url("../../../../assets//images/mobile/Purse1.png");
+      }
+      &--pink {
+        background-image: url("../../../../assets//images/mobile/Purse2.png");
+      }
+      &--yellow {
+        background-image: url("../../../../assets//images/mobile/Purse3.png");
+      }
+      &--grey {
+        background-image: url("../../../../assets//images/mobile/Purse4.png");
+      }
+    }
+    & &__info {
+      padding: 26px 16px 16px 16px;
+    }
+    & &__description {
+      width: 100%;
+      line-height: 141%;
+    }
+    & &__price {
+      margin-bottom: 11px;
+    }
+  }
+}

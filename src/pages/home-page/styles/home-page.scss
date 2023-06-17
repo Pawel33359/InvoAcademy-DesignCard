@@ -1,0 +1,23 @@
+// Homepage Styles File
+// Here we import all the Styles files we need for our Homepage.
+
+@import "../styles/design-card.scss";
+
+#home-page {
+  // To Center for devices other than mobiles
+  @media (min-width: 376px) {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 16px;
+
+  @media (max-width: 375px) {
+    padding-top: 65px;
+  }
+}

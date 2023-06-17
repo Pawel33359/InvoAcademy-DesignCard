@@ -1,0 +1,32 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: var(--color-light-text);
+}
+body {
+  font-family: "Noto Serif", "Montserrat", sans-serif;
+  color: var(--color-dark-text);
+}
+.body--salmon {
+  background-color: var(--color-salmon);
+}
+.body--pink {
+  background-color: var(--color-pink);
+}
+.body--yellow {
+  background-color: var(--color-yellow);
+}
+.body--grey {
+  background-color: var(--color-grey);
+}
