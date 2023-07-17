@@ -16,19 +16,19 @@
 
     &--salmon {
       background-image: url("../../../../assets//images/desktop/Purse1.png");
-      background-color: #f7f7f7;
+      background-color: var(--color-background-grey);
     }
     &--pink {
       background-image: url("../../../../assets//images/desktop/Purse2.png");
-      background-color: #fff1f7;
+      background-color: var(--color-background-pink);
     }
     &--yellow {
       background-image: url("../../../../assets//images/desktop/Purse3.png");
-      background-color: #fff6e5;
+      background-color: var(--color-background-yellow);
     }
     &--grey {
       background-image: url("../../../../assets//images/desktop/Purse4.png");
-      background-color: #f7f7f7;
+      background-color: var(--color-background-grey);
     }
   }
 
@@ -140,6 +140,7 @@
     padding: 1rem 0;
     border-radius: 12px;
     letter-spacing: -0.006em;
+    transition: all 0.3s;
     &:hover {
       background-color: #ffc4ad;
     }
